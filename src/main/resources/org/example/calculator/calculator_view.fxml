@@ -3,9 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane hgap="10.0" prefHeight="300.0" prefWidth="400.0" vgap="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculator.calculator_view.CalculatorView">
+<GridPane hgap="10.0" prefHeight="300" prefWidth="400.0" vgap="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculator.calculator_view.CalculatorView">
 
-    <Label fx:id="label" alignment="CENTER_RIGHT" maxWidth="Infinity" text="" wrapText="false" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+    <Label fx:id="label" alignment="CENTER_RIGHT" maxWidth="Infinity" text="" wrapText="false"
+           GridPane.columnSpan="5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0"
+           style="-fx-border-color: black; -fx-border-width: 2; -fx-padding: 5; -fx-background-color: white;" />
 
     <Button onAction="#createNumber" prefHeight="43.0" prefWidth="50.0" text="1" userData="1" GridPane.rowIndex="2" />
 
@@ -25,7 +27,9 @@
 
     <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="9" userData="9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
 
-    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="." userData="." GridPane.columnIndex="3" GridPane.rowIndex="4" />
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="0" userData="0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+
+    <Button onAction="#createNumber" maxWidth="114" prefHeight="43.0" prefWidth="53.0" text="." userData="." GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
 
     <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="+" userData="ADD" GridPane.columnIndex="3" GridPane.rowIndex="2" />
 
@@ -35,22 +39,15 @@
 
     <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="-" userData="SUBTRACT" GridPane.columnIndex="3" GridPane.rowIndex="3" />
 
-    <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="=" userData="EQUAL" GridPane.columnIndex="3" GridPane.rowIndex="5"  />
+    <Button onAction="#buttons" maxWidth="117" prefHeight="43.0" prefWidth="53.0" text="=" userData="EQUAL" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="4"  />
 
-    <Button onAction="#clear" prefHeight="43.0" prefWidth="53.0" text="clear" userData="CLEAR" GridPane.columnIndex="3" GridPane.rowIndex="6"  />
+    <Button onAction="#clear" maxWidth="117" prefHeight="43.0" prefWidth="53.0" text="С" userData="CLEAR" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5"  />
     <columnConstraints>
         <ColumnConstraints minWidth="50.0" prefWidth="50.0" />
         <ColumnConstraints minWidth="50.0" prefWidth="50.0" />
         <ColumnConstraints hgrow="ALWAYS" />
-        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="SOMETIMES" />
         <ColumnConstraints hgrow="ALWAYS" />
     </columnConstraints>
-    <rowConstraints>
-        <RowConstraints />
-        <RowConstraints vgrow="NEVER" />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-    </rowConstraints>
 
 </GridPane>
