@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" prefHeight="300.0" prefWidth="400.0" vgap="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculator.calculator_view.CalculatorView">
+
+    <Label fx:id="label" alignment="CENTER_RIGHT" maxWidth="Infinity" text="" wrapText="false" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="50.0" text="1" userData="1" GridPane.rowIndex="2" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="50.0" text="2" userData="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="3" userData="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="4" userData="4" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="50.0" text="5" userData="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="6" userData="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="7" userData="7" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="50.0" text="8" userData="8" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="9" userData="9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <Button onAction="#createNumber" prefHeight="43.0" prefWidth="53.0" text="." userData="." GridPane.columnIndex="3" GridPane.rowIndex="4" />
+
+    <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="+" userData="ADD" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+    <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="*" userData="MULTIPLY" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+
+    <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="/" userData="DIVIDE" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+
+    <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="-" userData="SUBTRACT" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+    <Button onAction="#buttons" prefHeight="43.0" prefWidth="53.0" text="=" userData="EQUAL" GridPane.columnIndex="3" GridPane.rowIndex="5"  />
+
+    <Button onAction="#clear" prefHeight="43.0" prefWidth="53.0" text="clear" userData="CLEAR" GridPane.columnIndex="3" GridPane.rowIndex="6"  />
+    <columnConstraints>
+        <ColumnConstraints minWidth="50.0" prefWidth="50.0" />
+        <ColumnConstraints minWidth="50.0" prefWidth="50.0" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints vgrow="NEVER" />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>
