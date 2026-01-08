@@ -4,8 +4,7 @@ public enum OperationType {
     ADD(true),
     SUBTRACT(true),
     MULTIPLY(true),
-    DIVIDE(true),
-    EQUAL(false);
+    DIVIDE(true);
 
     private final boolean operation;
 
@@ -13,7 +12,4 @@ public enum OperationType {
         this.operation = operation;
     }
 
-    public boolean isMathOperation() {
-        return operation;
-    }
 }

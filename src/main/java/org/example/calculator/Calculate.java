@@ -1,9 +1,6 @@
 package org.example.calculator;
 
 import org.example.calculator.Enums.OperationType;
-import org.example.calculator.Operations;
-
-import java.util.Objects;
 
 public class Calculate {
     private String number1;
