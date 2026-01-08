@@ -41,6 +41,12 @@ public class CalculatorView {
         String operation = button.getUserData().toString();
         String operationSymbol = button.getText();
 
+        if (button.getUserData().toString().equals("SUBTRACT") && number.isEmpty() && !operationNow.isStatus()) {
+            number.append("-");
+            label.setText(label.getText() + "-");
+            return;
+        }
+
         if (!operationNow.isStatus() && !Objects.equals(operation, "EQUAL")) {
             operationNow.setOperationType(OperationType.valueOf(operation));
             operationNow.setStatus(true);

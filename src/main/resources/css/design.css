@@ -1,0 +1,49 @@
+.root {
+    -fx-background-color: black;
+}
+
+.button {
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #555555;
+}
+
+.button:pressed {
+    -fx-background-color: #333333;
+}
+
+.label {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.operator-button {
+    -fx-background-color: #ff9500; /* оранжевий */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.operator-button:hover {
+    -fx-background-color: #ffa733;
+}
+
+.operator-button:pressed {
+    -fx-background-color: #cc7a00;
+}
+
+.clear-button{
+    -fx-background-color: #ece6e6;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+.clear-button:hover{
+    -fx-background-color: #ffffff;
+}
+.clear-button:pressed {
+    -fx-background-color: #d2c6c4;
+}
